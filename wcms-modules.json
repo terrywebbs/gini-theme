@@ -6,7 +6,7 @@
             "repo": "https://github.com/terrywebbs/gini-theme/tree/master",
             "zip": "https://github.com/terrywebbs/gini-theme/archive/master.zip",
             "summary": "Default WonderCMS theme (2022). Theme works without Bootstrap and jQuery.",
-            "version": "3.5.1",
+            "version": "3.5.2",
             "image": "https://raw.githubusercontent.com/terrywebbs/gini-theme/master/preview.jpg"
         }
     }
