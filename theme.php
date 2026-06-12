@@ -56,21 +56,21 @@
                   
                   <div class="icons-row">
                     <!-- Shop Link -->
-                    <a href="https://sumup.link" target="_blank" class="social-link-item">
+                    <a href="https://ginigifts.sumup.link/" target="_blank" class="social-link-item">
                       <div class="icon-circle-frame">
                         <img src="<?= $Wcms->asset('images/gem.png') ?>" alt="Shop" class="social-icon">
                       </div>
                       <span class="icon-label">Shop</span>
                     </a>
                     <!-- eBay Link -->
-                    <a href="https://ebay.co.uk" target="_blank" class="social-link-item">
+                    <a href="https://www.ebay.co.uk/usr/ginigifts" target="_blank" class="social-link-item">
                       <div class="icon-circle-frame">
                         <img src="<?= $Wcms->asset('images/ebay.png') ?>" alt="eBay" class="social-icon">
                       </div>
                       <span class="icon-label">eBay</span>
                     </a>
                     <!-- Instagram Link -->
-                    <a href="https://instagram.com" target="_blank" class="social-link-item">
+                    <a href="https://www.instagram.com/ginigifts/?hl=en" target="_blank" class="social-link-item">
                       <div class="icon-circle-frame">
                         <img src="<?= $Wcms->asset('images/instagram.png') ?>" alt="Instagram" class="social-icon">
                       </div>
