@@ -35,9 +35,9 @@
 
     <!-- Updated Stylesheet Paths -->
     <link type="text/css" rel="stylesheet" href="<?= $WND->path('style.css') ?>">
-    <link rel="stylesheet" href="<?= $WND->path('assets/css/main.css') ?>">
-    <noscript><link rel="stylesheet" href="<?= $WND->path('assets/css/noscript.css') ?>"></noscript>
-    <link type="text/css" rel="alternate stylesheet" href="<?= $WND->path('assets/css/style.css') ?>">
+    <link rel="stylesheet" href="<?= $WND->path('css/main.css') ?>">
+    <noscript><link rel="stylesheet" href="<?= $WND->path('css/noscript.css') ?>"></noscript>
+    <link type="text/css" rel="alternate stylesheet" href="<?= $WND->path('css/style.css') ?>">
     
     <style>
       body {
