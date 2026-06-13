@@ -25,12 +25,14 @@
       <header id="header" class="gini-grid-header">
         
         <!-- Renamed container to mirror the exact row settings of your social links -->
-        <div class="gini-logo-row">
-          <div class="gini-header-circle">
-            <!-- Image sourced through WonderCMS dynamic root folder paths -->
-            <img src="<?= $Wcms->asset('images/gem.png') ?>" alt="Gini Gifts Gem Logo" class="gem-img">
-          </div>
-        </div>
+        <a href="<?= $Wcms->url() ?>" class="gini-logo-link">
+  <div class="gini-logo-row">
+    <div class="gini-header-circle">
+      <!-- Image sourced through WonderCMS dynamic root folder paths -->
+      <img src="<?= $Wcms->asset('images/gem.png') ?>" alt="GiniGifts Gem Logo" class="gem-img">
+    </div>
+  </div>
+</a>
         
         <!-- The continuous horizontal cross bar anchor line under the logo -->
         <div class="header-horizontal-line"></div>
