@@ -1,8 +1,8 @@
 /* ==========================================================================
-   GLOBAL CONFIGURATION & ENLARGED TYPOGRAPHY STACK
+   1. GLOBAL CONFIGURATION & TYPOGRAPHY STACK
    ========================================================================== */
 html {
-  font-size: 100% !important; /* Scaled root basis up from 100% to expand everything proportionally */
+  font-size: 100% !important;
 }
 
 body {
@@ -12,16 +12,12 @@ body {
   background-color: #000000 !important;
   margin: 0;
   padding: 0;
-  
-  /* Premium modern system font stack configuration */
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 1.15rem;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  
-  font-size: 1.15rem !important; /* Forced global base font size boost */
 }
 
-/* Core Presentation Layout Wrapper */
 #wrapper {
   width: 100%;
   max-width: 100%;
@@ -33,23 +29,22 @@ body {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 5rem 2rem; /* Expanded padding room for larger layouts */
+  padding: 5rem 2rem;
 }
 
 /* ==========================================================================
-   2. HEADER ARCHITECTURAL LOGO & CONNECTOR LINE GRID - MIRRORED FIX
+   2. HEADER ARCHITECTURAL LOGO & CONNECTOR LINES
    ========================================================================== */
 .gini-grid-header {
   display: block !important;
   text-align: center !important;
-  padding: 5rem 2rem 2rem 2rem !important; 
   width: 100% !important;
   max-width: 100% !important;
+  padding: 5rem 2rem 2rem 2rem !important; 
   position: relative !important;
   box-sizing: border-box !important;
 }
 
-/* Mirrored directly from your working .icons-row social layout settings */
 .gini-grid-header .gini-logo-row {
   display: flex !important;
   flex-direction: row !important;
@@ -60,32 +55,30 @@ body {
   padding: 0 !important;
 }
 
-/* Renamed container completely to drop inherited theme offset rules */
 .gini-grid-header .gini-header-circle {
-  width: 6rem !important;
-  height: 6rem !important;
-  border: solid 2px #ffffff !important; 
-  border-radius: 100% !important;
-  
-  /* Precision alignment matching the social-link-item reset variables */
   display: flex !important;
   justify-content: center !important;
   align-items: center !important;
+  width: 6rem !important;
+  height: 6rem !important;
   margin: 0 auto !important; 
   padding: 0 !important;
   position: relative !important;
-  background: none !important;
   left: 0 !important;
   right: 0 !important;
+  background: none !important;
+  border: solid 2px #ffffff !important; 
+  border-radius: 100% !important;
 }
 
 .gini-grid-header .gini-header-circle .gem-img {
-  width: 70px !important;    /* Uses identical dimensions to your social graphics */
-  height: 70px !important;   
-  object-fit: contain !important;     
   display: block !important;
+  width: 70px !important;    
+  height: 70px !important;   
   margin: 0 auto !important;
   padding: 0 !important;
+  object-fit: contain !important;     
+  filter: brightness(0.5) sepia(1) hue-rotate(170deg) saturate(5) brightness(1.2) !important;
   transition: opacity 0.05s ease, transform 0.05s ease !important;
 }
 
@@ -94,78 +87,78 @@ body {
   transform: scale(1.15) !important; 
 }
 
-/* Generates the vertical line extending downwards from the absolute center */
+/* Vertical line extending downward from logo center */
 .gini-grid-header .gini-header-circle::after {
   content: "" !important;
   position: absolute !important;
   top: 100% !important; 
   left: 50% !important;
-  transform: translateX(-50%) !important; /* Forces layout calculations onto a true midpoint axis */
+  transform: translateX(-50%) !important; 
   width: 1px !important;
   height: 2.5rem !important; 
   background-color: #ffffff !important; 
-  display: block !important;
   z-index: 2 !important;
 }
 
-/* Continuous Top Horizontal Base Line Under Logo */
+/* Top Horizontal Base Line Under Logo */
 .gini-grid-header .header-horizontal-line {
+  display: block !important;
   width: 100% !important;
   max-width: 45rem !important; 
   height: 1px !important;
-  background-color: #ffffff !important; 
   margin: 2.5rem auto 3rem auto !important; 
-  display: block !important;
+  background-color: #ffffff !important; 
 }
 
 /* ==========================================================================
-   ENLARGED CONTENT DISPLAY LAYER STYLES
+   3. CONTENT LAYOUT & TYPOGRAPHY STYLES
    ========================================================================== */
 .content {
   display: block;
   width: 100%;
-  max-width: 52rem; /* Opened max-width bounds to hold larger text lines comfortably */
+  max-width: 52rem; 
   margin: 0 auto;
-  color: #ffffff;
+  color: #f8f9fa;
 }
 
 #content-area {
   text-align: center;
 }
 
-/* Main Display Title (e.g., Gini Gifts) */
 #content-area h1 {
-  font-size: 3rem !important;      /* Increased size from 2.5rem */
+  font-size: 3rem !important;      
   font-weight: 300;               
-  letter-spacing: 0.45rem;         /* Expanded letter tracking tracking */
+  letter-spacing: 0.45rem;         
   text-transform: uppercase;
   margin-bottom: 2rem;
-  color: #ffffff;
   line-height: 1.3 !important;
+  color: #f8f9fa;
 }
 
-/* Subheadings (e.g., About, Contact titles) */
-#content-area h2, #content-area h3 {
-  font-size: 1.85rem !important;   /* Increased size from 1.5rem */
+#content-area h2, 
+#content-area h3 {
+  font-size: 1.85rem !important;   
   font-weight: 400;
   letter-spacing: 0.25rem;
   text-transform: uppercase;
-  color: #ffffff;
   margin-top: 2.5rem;
   margin-bottom: 1.5rem;
+  color: #f8f9fa;
 }
 
-/* Core Reading Body Text Overrides */
-#content-area p, #content-area span, #content-area div {
-  color: rgba(255, 255, 255, 0.8) !important;
-  font-size: 1.15rem !important;   /* Increased reading size from 0.95rem */
+/* Protected Content Elements (Skips Text Editor Frameworks) */
+#content-area p, 
+#content-area span:not([class*="note-"]), 
+#content-area div:not(.note-editor):not(.note-toolbar):not([class*="note-"]) {
+  font-size: 1.15rem !important;   
   font-weight: 300;               
-  line-height: 1.95 !important;   /* Generous line-height tracking for comfort */
+  line-height: 1.95 !important;   
   letter-spacing: 0.06rem;        
+  color: rgba(255, 255, 255, 0.8) !important;
 }
 
 #content-area a {
-  color: #ffffff;
+  color: #f8f9fa;
   text-decoration: underline;
   transition: opacity 0.05s ease;
 }
@@ -175,20 +168,20 @@ body {
 }
 
 /* ==========================================================================
-   4. PURE CSS IMAGE SLIDESHOW WINDOW MODULE (8-IMAGE CALIBRATION)
+   4. IMAGE SLIDESHOW WINDOW MODULE
    ========================================================================== */
 .slideshow-container {
-  position: relative !important;
   display: block !important;
+  position: relative !important;
   width: 100% !important;
   height: 250px !important;
   max-width: 39rem !important;
   margin: 30px auto !important;
-  border-radius: 12px !important;
   overflow: hidden !important;
-  transform: translateZ(0) !important;
   background-color: #000000 !important;
   border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  border-radius: 12px !important;
+  transform: translateZ(0) !important;
 }
 
 .slideshow-container img {
@@ -198,25 +191,15 @@ body {
   width: 100% !important;
   height: 100% !important;
   object-fit: cover !important;
-  opacity: 0; /* Base state */
-  
-  /* Total track time set to 24s (3 seconds per image asset slot loop) */
+  opacity: 0; 
   animation: cssSlideshow8 24s infinite linear !important;
 }
 
-/* THE CURE: Forces the first image to display instantly as a loading fallback */
 .slideshow-container img:nth-child(1) { animation-delay: 0s !important; opacity: 1 !important; }
 .slideshow-container img:nth-child(2) { animation-delay: 5s !important; }
 .slideshow-container img:nth-child(3) { animation-delay: 10s !important; }
 .slideshow-container img:nth-child(4) { animation-delay: 15s !important; }
 
-/* 
-   Calibrated 8-Image Keyframe Timeline Math:
-   Each asset slot occupies 12.5% of the total 24s loop track (3 seconds total per image).
-   0% to 2%: Blends in smoothly.
-   2% to 10.5%: Stays solid and visible.
-   10.5% to 12.5%: Blends out smoothly to reveal the next layer.
-*/
 @keyframes cssSlideshow8 {
   0% { opacity: 0; }
   1.5% { opacity: 1; }
@@ -226,26 +209,24 @@ body {
 }
 
 /* ==========================================================================
-   6. ARCHITECTURAL MENU BOXES & CONNECTOR LINE GRID
+   5. MENU BOX ARCHITECTURE & GRID LINES
    ========================================================================== */
 #gini-grid-nav {
+  display: block !important;
+  position: relative !important;
   width: 100% !important;
   margin-top: 4rem !important;
-  position: relative !important;
-  display: block !important;
 }
 
-/* Continuous Top Horizontal Base Line */
 #gini-grid-nav .grid-horizontal-line {
-  width: 100% !important;
-  max-width: 45rem !important; /* Limits width line to perfectly frame the menu cluster */
-  height: 1px !important;
-  background-color: #ffffff !important; /* Pure white crisp accent contrast */
-  margin: 0 auto !important;
   display: block !important;
+  width: 100% !important;
+  max-width: 45rem !important; 
+  height: 1px !important;
+  margin: 0 auto !important;
+  background-color: #ffffff !important; 
 }
 
-/* Menu Unordered Item Flex Alignment Grid */
 #gini-grid-nav ul {
   display: flex !important;
   flex-direction: row !important;
@@ -253,74 +234,69 @@ body {
   justify-content: center !important;
   align-items: flex-start !important;
   list-style: none !important;
-  padding: 0 !important;
-  margin: 0 auto !important;
   width: 100% !important;
-  border-top: none !important; /* Erased old heavy padding border property lines */
+  margin: 0 auto !important;
+  padding: 0 !important;
 }
 
-/* Individual List Elements - House the Vertical lines up to the cross-bar */
 #gini-grid-nav ul li {
-  margin: 0 15px !important; /* Horizontal distance parameter between menu blocks */
   display: inline-block !important;
   position: relative !important;
-  padding-top: 2rem !important; /* Creates exact workspace height for the vertical link lines */
+  margin: 0 15px !important; 
+  padding-top: 2rem !important; 
 }
 
-/* THE CURE: Generates a single 1px pure white vertical line extending upwards */
+/* Vertical grid line extending upwards to meet horizontal line */
 #gini-grid-nav ul li::before {
   content: "" !important;
+  display: block !important;
   position: absolute !important;
   top: 0 !important;
   left: 50% !important;
   transform: translateX(-50%) !important;
   width: 1px !important;
-  height: 2rem !important; /* Matches line height exactly to the top list element padding */
-  background-color: #ffffff !important; /* Pure white connection point */
-  display: block !important;
+  height: 2rem !important; 
+  background-color: #ffffff !important; 
 }
 
-/* Modern Border Boxes Surrounding Each Individual Text Menu Option Link */
 #gini-grid-nav ul li a {
-  color: #ffffff !important;
-  text-decoration: none !important;
-  text-transform: uppercase !important;
+  display: block !important;
+  padding: 0.8rem 1.5rem !important; 
   font-size: 0.85rem !important;
   font-weight: 400 !important;
   letter-spacing: 0.25rem !important;
-  
-  /* Box Outlines Profile */
-  padding: 0.8rem 1.5rem !important; /* Generous inside padding room inside the boxes */
-  display: block !important;
-  border: 1px solid rgba(255, 255, 255, 0.4) !important; /* Clean thin white border outlines */
-  border-radius: 4px !important; /* Matches your slideshow corner styles */
-  background-color: rgba(255, 255, 255, 0.02) !important; /* Subtle ghost grey filling */
-  
-  transition: border-color 0.05s ease, background-color 0.05s ease, transform 0.05s ease !important;
+  text-transform: uppercase !important;
+  text-decoration: none !important;
+  color: #ffffff !important;
+  background-color: rgba(255, 255, 255, 0.02) !important; 
+  border: 1px solid rgba(255, 255, 255, 0.4) !important; 
+  border-radius: 4px !important; 
+  transition: border-color 0.05s ease, background-color 0.05s ease, transform 0.05s ease, filter 0.05s ease !important;
 }
 
-/* Interactive Hover States for the Box Items */
+/* Combines navigation transformations with gemstone blue overlay logic */
 #gini-grid-nav ul li a:hover, 
 #gini-grid-nav ul li.active a {
-  border-color: #ffffff !important; /* Brightens active or hovered box to full solid white */
-  background-color: rgba(255, 255, 255, 0.1) !important; /* Opens brightness filling slightly */
-  transform: translateY(2px) !important; /* Tiny micro downward push animation when clicked */
   opacity: 1 !important;
+  border-color: #ffffff !important; 
+  background-color: rgba(255, 255, 255, 0.1) !important; 
+  transform: translateY(2px) !important; 
+  filter: brightness(0.5) sepia(1) hue-rotate(170deg) saturate(5) brightness(1.2) !important;
 }
+
 /* ==========================================================================
-   WONDERCMS SOCIAL ICON LAYOUT RESET WITH CIRCLE FRAMES
+   6. WONDERCMS SOCIAL ICON CLUSTER WRAPPER
    ========================================================================== */
 #gini-social-wrapper {
-  margin-top: 3rem !important;
-  width: 100% !important;
   display: block !important;
+  width: 100% !important;
+  margin-top: 3rem !important;
 }
 
 .contact-prompt {
   margin-bottom: 2rem !important;
 }
 
-/* Horizontal Row Configuration */
 #gini-social-wrapper .icons-row {
   display: flex !important;
   flex-direction: row !important;
@@ -331,123 +307,96 @@ body {
   padding: 0 !important;
 }
 
-/* Base Link Column Card Element */
 #gini-social-wrapper .social-link-item {
   display: flex !important;
   flex-direction: column !important; 
   align-items: center !important;    
+  width: 100px !important;            
   margin: 0 25px !important;         
   padding: 0 !important;
-  border: none !important;
   background: none !important;
+  border: none !important;
   text-decoration: none !important;
-  width: 100px !important;            
 }
 
-/* Elegant White Circle Frame Wrapper */
 #gini-social-wrapper .icon-circle-frame {
-  width: 75px !important;            /* Box width housing the 45px image */
-  height: 75px !important;           /* Box height housing the 45px image */
-  border: 2px solid #ffffff !important;
-  border-radius: 100% !important;    /* Creates a perfect geometric circle layout */
   display: flex !important;
-  justify-content: center !important;/* Centering focus horizontal axis */
-  align-items: center !important;    /* Centering focus vertical axis */
+  justify-content: center !important;
+  align-items: center !important;    
+  width: 75px !important;            
+  height: 75px !important;           
   margin-bottom: 12px !important;
-  background-color: rgba(255, 255, 255, 0.02) !important; /* Ghost grey background fill tint */
-  transition: border-color 0.05s ease, transform 0.05s ease, background-color 0.05s ease !important;
   box-sizing: border-box !important;
+  background-color: rgba(255, 255, 255, 0.02) !important; 
+  border: 2px solid #ffffff !important;
+  border-radius: 100% !important;    
+  transition: border-color 0.05s ease, transform 0.05s ease, background-color 0.05s ease !important;
 }
 
-/* Precision 45px Icon Graphics Constraints */
 #gini-social-wrapper .social-icon {
+  display: block !important;
   width: 45px !important;
   height: 45px !important;
   max-width: 45px !important;
   max-height: 45px !important;
-  object-fit: contain !important;
-  opacity: 0.75 !important;
-  display: block !important;
-  transition: opacity 0.05s ease !important;
   margin: 0 !important;
   padding: 0 !important;
-}
-
-/* Custom Text Labels Styles underneath the Graphic Icon */
-#gini-social-wrapper .icon-label {
-  color: #ffffff !important;
-  font-size: 0.85rem !important;     
+  object-fit: contain !important;
+  opacity: 0.75 !important;
+  filter: brightness(0.5) sepia(1) hue-rotate(170deg) saturate(5) brightness(1.2);
+  transition: opacity 0.05s ease !important;
+  }
+  
+  #gini-social-wrapper .icon-label {
+  line-height: 1.2 !important;
   font-weight: 400 !important;
   letter-spacing: 0.1rem !important;
-  text-transform: uppercase;
+  text-transform: uppercase;color: #ffffff !important;
   transition: color 0.05s ease !important;
-  line-height: 1.2 !important;
-}
+  }
+  
+/* ==========================================================================
+   BALANCED SOCIAL LABELS SIZING ADJUSTMENT (10-15% REDUCTION)
+   ========================================================================== */
 
-/* Integrated Hover Micro Animation Properties */
-#gini-social-wrapper .social-link-item:hover .icon-circle-frame {
-  border-color: rgba(255, 255, 255, 1) !important; /* Illuminates the ring outline to solid white */
-  background-color: rgba(255, 255, 255, 0.1) !important; /* Illuminates back container fill space */
-  transform: scale(1.08) !important; /* Snappy micro scale bounce expansion */
+/* Adjusted font-size to 0.75rem for perfect balanced legibility */
+html body #wrapper #header #content-area #gini-social-wrapper .social-link-item span.icon-label {
+  font-size: 0.8rem !important;
+  letter-spacing: 0.1rem !important; /* Restored original tracking for layout breathing room */
 }
-
-#gini-social-wrapper .social-link-item:hover .social-icon {
-  opacity: 1 !important;             /* Pops image vector opacity to full sharpness */
-}
-
-#gini-social-wrapper .social-link-item:hover .icon-label {
-  color: #ffffff !important;         /* Lights up text label to pure white */
-}
-
-#footer {
+  
+  /* Social link interaction updates */
+  #gini-social-wrapper .social-link-item:hover .icon-circle-frame {
+  border-color: rgba(255, 255, 255, 1) !important;
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  transform: scale(1.08) !important;
+  }
+  
+  #gini-social-wrapper .social-link-item:hover .social-icon {
+  opacity: 1 !important;
+  }
+  
+  #gini-social-wrapper .social-link-item:hover .icon-label {
+  color: #ffffff !important;
+  }
+  
+  /* =======7. COMPONENT FOOTER SETTINGS============= */
+  #footer {
   text-align: center;
   padding: 5rem 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  font-size: 0.95rem !important;   /* Upscaled from 0.8rem */
-  letter-spacing: 0.07rem;
+  font-size: 0.95rem !important;
+  letter-spacing: 0.07rem;color: #ffffff !important;
+  filter: brightness(0.5) sepia(1) hue-rotate(170deg) saturate(5) brightness(1.2);
+  }
+  
+  /* ======8. SUMMERNOTE HIGH-CONTRAST SELECTION PREVIEWS======= */
+  .note-dropdown-menu h1,.note-dropdown-menu h2,.note-dropdown-menu h3,.note-dropdown-menu h4,.note-dropdown-menu h5,.note-dropdown-menu h6,.note-dropdown-menu p,.note-dropdown-menu pre,.note-dropdown-menu blockquote,.note-dropdown-menu span,.note-dropdown-menu a {
+  color: #222222 !important;
+  background-color: transparent !important;
+  }
+  
+  .note-dropdown-menu li a:hover *,.note-dropdown-menu li a:hover {
   color: #ffffff !important;
-}
-
-/* ==========================================================================
-   WONDERCMS SUMMERNOTE EDITOR CONTRAST FIX
-   ========================================================================== */
-.note-editor, .note-frame, .note-dialog, .note-dropdown-menu, .note-modal-content {
-  background-color: #ffffff !important;
-  color: #333333 !important;
-  font-family: sans-serif !important;
-}
-.note-editor .note-toolbar, .note-toolbar {
-  background-color: #f5f5f5 !important;
-  border-bottom: 1px solid #dddddd !important;
-  color: #333333 !important;
-}
-.note-btn {
-  background-color: #ffffff !important;
-  color: #333333 !important;
-  border: 1px solid #cccccc !important;
-}
-.note-btn:hover {
-  background-color: #e6e6e6 !important;
-  color: #333333 !important;
-}
-.note-dropdown-menu, .note-dropdown-menu * {
-  background-color: #ffffff !important;
-  color: #333333 !important;
-}
-.note-dropdown-item:hover, .dropdown-menu a:hover {
   background-color: #007bff !important;
-  color: #ffffff !important;
-}
-.note-modal-header, .note-modal-body, .note-modal-footer, .note-form-label, .note-input {
-  background-color: #ffffff !important;
-  color: #333333 !important;
-}
-.note-input {
-  border: 1px solid #cccccc !important;
-}
-.note-editable {
-  background-image: url("../images/firelights.gif") !important;
-  background-color: #000000 !important;
-  color: #ffffff !important;
-  text-align: center !important;
-}
+  }
